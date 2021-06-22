@@ -1,0 +1,19 @@
+.round{
+    border: 10px #687291;
+    border-radius: 15px;
+    border-style: solid;
+    padding: 20px;
+    width: 50%; 
+    margin: 2rem auto;
+    font-family: Gill Sans;
+    font-size: 13px;
+}
+td.round{
+    width: 50%;
+}
+.a_r{
+    text-align: right;
+}
+.a_l{
+    text-align: left;
+}

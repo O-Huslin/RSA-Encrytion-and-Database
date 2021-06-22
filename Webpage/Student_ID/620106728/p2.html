@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Vote logging form</title>
+        <script defer src="val_form.js"></script>
+        <link href="styles/form.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+
+        <div id="e_msg"></div>
+
+        <form id="fm" onsubmit="vali_form()" action="handler.php" method="POST">
+
+            <div class="fld">
+                <label>Clerk ID</label>
+                <input id="c" name="c_id" type="text">
+            </div><br><br>
+
+            <div class="fld">
+                <label>Constituency ID</label>
+                <input id="ci" name="con_id" type="text">
+            </div><br><br>
+
+            <div class="fld">
+                <label>Polling Division</label>
+                <input id="pd" name="pd" type="text">
+            </div><br><br>
+
+            <div class="fld">
+                <label>Polling Station</label>
+                <input id="ps" name="ps" type="text">
+            </div><br><br>
+
+            <div class="fld">
+                <label>Candidate 1 Votes</label>
+                <input id="c1" name="c1" type="text">
+            </div><br><br>
+
+            <div class="fld">
+                <label>Candidate 2 Votes</label>
+                <input id="c2" name="c2" type="text">
+            </div><br><br>
+
+            <div class="fld">
+                <label>Rejected</label>
+                <input id="r" name="r" type="text">
+            </div><br><br>
+
+            <div class="fld">
+                <label>Total Votes</label>
+                <input id="tot" name="r" type="text">
+            </div><br><br>
+            
+            <button type="submit">Submit</button>
+        </form> <!--
+        <script type="text/javascript">
+
+            //checks the input is empty
+            function req_val(fd, msg){
+                if(fd===null || fd===""){
+                    alert(msg); return false;
+                }else{
+                    return true;
+                }
+                
+                /*with(field){
+                    if(value === null || value === ""){
+                        alert(alerttxt);
+                        return false;
+                    }else{
+                        return true;
+                    }
+                }*/
+            }
+            //checks if input is valid
+            function vali(thisform){
+                    with (thisform){
+                        if(req_val(c, "Please insert Clerk ID")===false){
+                            c.foucus(); return false;
+                        }
+                        if(req_val(ci, "Please insert Constituency ID")===false){
+                            ci.foucus(); return false;
+                        }
+                        if(req_val(pd, "Please insert Polling Division ID")===false){
+                            pd.foucus(); return false;
+                        }
+                        if(req_val(ps, "Please Insert the Polling Station")===false){
+                            ps.foucus(); return false;
+                        }
+                        if(req_val(c1, "Please insert candidate\'s 1 vote'")===false){
+                            c1.foucus(); return false;
+                        }
+                        if(req_val(c2, "Please insert candidate\'s vote'")===false){
+                            c2.foucus(); return false;
+                        }if(req_val(r, "Please insert the rejected votes")===false){
+                            r.foucus(); return false;
+                        }
+                    }
+                }
+        </script> -->
+    </body>
+</html>

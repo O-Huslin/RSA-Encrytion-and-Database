@@ -1,0 +1,23 @@
+.vote tr:nth-child(even){
+    background-color: #eeeff2;
+}
+.vote tr:nth-child(odd){
+    background-color: #dfe1e7;
+}
+.vote, tr
+{
+    border: 2px solid #d0d0ff;
+    border-collapse: collapse;
+    width: 50%; 
+    margin: 0 auto;
+    font-family: Gill Sans;
+    font-size: 13px;
+}
+h1, h2{
+    text-align:center;
+}
+
+
+
+
+
